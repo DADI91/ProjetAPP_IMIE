@@ -1,11 +1,9 @@
 package com.imie.api.repository;
 
-import com.imie.api.model.Utilisateur;
+import com.imie.api.model.Type_Salle;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
 @Repository
-public interface UtilisateurRepository extends CrudRepository<Utilisateur, Long> {
+public interface Type_SalleRepository extends CrudRepository<Type_Salle, Long> {
 }
