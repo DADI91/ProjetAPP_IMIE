@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formations</title>
+</head>
+<body>
+<h1>Liste des formations</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Nombre de places</th>
+    </tr>
+    <tr th:each="formation : ${formations}">
+        <td th:text="${formation.id}"></td>
+        <td th:text="${formation.nom}"></td>
+        <td th:text="${formation.nbPlaces}"></td>
+    </tr>
+</table>
+<p>
+    <a href="/formations/create">Créer une nouvelle formation</a>
+</p>
+</body>
+</
